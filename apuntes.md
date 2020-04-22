@@ -38,3 +38,8 @@ If I write a file, I can run it using "F5"
 * Una función print() invocada con más de un argumento genera la salida en una sola línea.
 * La función print() pone un espacio entre los argumentos emitidos por iniciativa propia.
 
+> La función print() tiene dos argumentos de palabras clave que se pueden utilizar para estos propósitos. El primero de ellos se llama end
+
+`print("Mi nombre es", "Python.", end=" ")
+print("Monty Python.")` "Mi nombre es Python. Monty Python."
+>el 'end=" "' Establece el caracter que se envia al final, ejemplo 'end= "\n"'
