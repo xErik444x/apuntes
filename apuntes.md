@@ -23,7 +23,30 @@
 * Tercero, Python deja el código por un momento y salta dentro de la función
 * Cuarto, la función ejecuta el código
 * Finalmente, Python regresa al código
+
+## Literales
+> Un literal se refiere a datos cuyos valores están determinados por el literal mismo.
+
+## Enteros
+> Enteros, es decir, aquellos que no tienen una parte fraccionaria.
+
+Python no permite escribir "." en lo numeros, en lugar de eso se puede poner "_" ej: "2_020" o "2020"
+
+### números octales y hexadecimales
+    Si un numero entero esta precedido por un código 0O o 0o (cero-o), el numero será tratado como un valor octal. Esto significa que el número debe contener dígitos en el rango del [0..7] únicamente.
+
+> 0o123 es un número octal con un valor (decimal) igual a 83.
+
+> La función print() realiza la conversión automáticamente.
+
+    La segunda convención nos permite utilizar números en hexadecimal. Dichos números deben ser precedidos por el prefijo 0x o 0X (cero-x).
+
+> 0x123 es un número hexadecimal con un valor (decimal) igual a 291
+
+## Floats
+> 4.0 0.4 4.
 <br>
+
 <h1> Let's code! </h1>
 
 ## Print in console:
@@ -55,3 +78,7 @@ print("-hola monty.")`
 `print("Fundamentos","Programación","en",sep="***",end="...")
 print("Python")`
 > Fundamentos *** Programación*** en...Python
+
+`print("    *","   * *","  *   *"," *     *","***   ***","  *   *","  *   *","  *****", sep="\n")`
+> flecha.
+
