@@ -1,1 +1,1 @@
-# apuntes
+# apuntes de python
