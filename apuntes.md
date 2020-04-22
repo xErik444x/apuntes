@@ -45,6 +45,15 @@ Python no permite escribir "." en lo numeros, en lugar de eso se puede poner "_"
 
 ## Floats
 > 4.0 0.4 4.
+
+    Por otro lado, no solo el punto hace que un número sea flotante. Se puede utilizar la letra "e"
+
+> 3 x 10 elevado a 8 = 3E8
+   
+    La letra E (también se puede utilizar la letra minúscula e - proviene de la palabra exponente) 
+
+* El exponente (el valor después de la E) debe ser un valor entero.
+* La base (el valor antes de la E) puede o no ser un valor entero.
 <br>
 
 <h1> Let's code! </h1>
