@@ -54,6 +54,29 @@ Python no permite escribir "." en lo numeros, en lugar de eso se puede poner "_"
 
 * El exponente (el valor después de la E) debe ser un valor entero.
 * La base (el valor antes de la E) puede o no ser un valor entero.
+
+### Codificando Flotantes
+> 6.62607 x 10-34 = 6.62607E-34
+
+`print(0.0000000000000000000001)` "1e-22"
+
+    Python siempre elige la presentación más corta del número, y esto se debe de tomar en consideración al crear literales.
+
+## Strings
+`print("Me gusta \"Monty Python\"")` = 'Me gusta  "Monty Python"'
+
+
+## Numeros y matematicas
+### Operadores aritméticos
+> exponenciación
+> 
+    Un signo de ** (doble asterisco) es un operador de exponenciación (potencia)
+    2 ** 3 = 8
+> división entera
+    Un símbolo de // (doble diagonal) es un operador de división entera.
+    los resultados siempre son redondeados.
+    y si un numero es flotante da resultado como float.
+    el redondeo siempre va hacia abajo.
 <br>
 
 <h1> Let's code! </h1>
@@ -90,4 +113,12 @@ print("Python")`
 
 `print("    *","   * *","  *   *"," *     *","***   ***","  *   *","  *   *","  *****", sep="\n")`
 > flecha.
+
+`print('"Estoy"', '""aprendiendo""','"""Python"""')`
+
+`print("\"Estoy\"","\"\"aprendiendo\"\"","\"\"\"Python\"\"\"", sep="\n")`
+
+    "Estoy"
+    ""aprendiendo""
+    """Python"""
 
