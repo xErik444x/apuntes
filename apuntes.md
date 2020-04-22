@@ -25,7 +25,7 @@
 * Finalmente, Python regresa al código
 <br>
 <br>
-# Let's code!
+<h1> Let's code! </h1>
 
 ## Print in console:
 > `print("hello world")`
