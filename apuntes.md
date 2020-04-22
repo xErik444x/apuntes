@@ -13,6 +13,18 @@
 + Almacenamiento en la nube y herramientas
 + Redes sociales, etc
 
+## ¿Qué es una función?
+* Un efecto.
+* Un resultado.
+
+## pasos de  una función
+* Primero, Python comprueba si el nombre especificado es legal
+* En segundo lugar, Python comprueba si los requisitos de la función para el número de argumentos le permiten invocar la función de esta manera
+* Tercero, Python deja el código por un momento y salta dentro de la función
+* Cuarto, la función ejecuta el código
+* Finalmente, Python regresa al código
+<br>
+<br>
 # Let's code!
 
 ## Print in console:
@@ -20,4 +32,9 @@
 
 If I write a file, I can run it using "F5"
 
+> `print("La Witsi Witsi Arañar" , "subió" , "a su telaraña.")`
+"La Witsi Witsi Arañar subió a su telaraña."
+
+* Una función print() invocada con más de un argumento genera la salida en una sola línea.
+* La función print() pone un espacio entre los argumentos emitidos por iniciativa propia.
 
