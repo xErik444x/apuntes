@@ -77,6 +77,16 @@ Python no permite escribir "." en lo numeros, en lugar de eso se puede poner "_"
     los resultados siempre son redondeados.
     y si un numero es flotante da resultado como float.
     el redondeo siempre va hacia abajo.
+
+> (módulo) %
+
+    El resultado de la operación es el residuo que queda de la división entera.
+
+## Operadores y sus enlaces
+### exponenciación
+    "***" este va de derecha a izquierda, rompienda la norma de lectura normal de python
+`print(2 ** 2 ** 3)` 2 ** 3 → 8; 2 ** 8 → 256
+
 <br>
 
 <h1> Let's code! </h1>
