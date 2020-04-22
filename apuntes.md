@@ -7,3 +7,9 @@
 + De código abierto, para que cualquiera pueda contribuir a su desarrollo.
 + El código que es tan comprensible como el inglés simple.
 + Adecuado para tareas cotidianas, permitiendo tiempos de desarrollo cortos.
+
+## ¿Dónde podemos ver a Python en acción?
++ Servicios de Internet como motores de búsqueda
++ Almacenamiento en la nube y herramientas
++ Redes sociales, etc
+
