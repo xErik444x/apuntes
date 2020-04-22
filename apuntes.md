@@ -16,4 +16,8 @@
 # Let's code!
 
 ## Print in console:
-> print("hello world")
+> `print("hello world")`
+
+If I write a file, I can run it using "F5"
+
+
