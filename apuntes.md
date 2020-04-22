@@ -42,3 +42,16 @@ If I write a file, I can run it using "F5"
 `print("Mi nombre es", "Python.", end=" ")
 print("Monty Python.")` "Mi nombre es Python. Monty Python."
 >el 'end=" "' Establece el caracter que se envia al final, ejemplo 'end= "\n"'
+
+`print("Mi", "nombre", "es", "Monty", "Python.", sep="-")` "Mi-nombre-es-Monty-Python."
+
+`print("Mi", "nombre", "es", sep="_", end="*")
+print("Monty", "Python.", sep="*", end="*\n")
+print("-hola monty.")` 
+> Mi_nombre_es*Monty*Python.*
+> 
+> -hola monty.
+
+`print("Fundamentos","Programación","en",sep="***",end="...")
+print("Python")`
+> Fundamentos *** Programación*** en...Python
