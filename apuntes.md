@@ -13,3 +13,7 @@
 + Almacenamiento en la nube y herramientas
 + Redes sociales, etc
 
+# Let's code!
+
+## Print in console:
+> print("hello world")
