@@ -24,7 +24,6 @@
 * Cuarto, la función ejecuta el código
 * Finalmente, Python regresa al código
 <br>
-<br>
 <h1> Let's code! </h1>
 
 ## Print in console:
