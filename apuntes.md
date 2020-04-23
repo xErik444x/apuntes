@@ -250,7 +250,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 
  >(~)
 
-|Arg A|~A|
+|Arg A `|`|~A|
 |:-:|:-:|
 |0|1|
 |1|0|
