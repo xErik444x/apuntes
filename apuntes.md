@@ -89,7 +89,11 @@ Python no permite escribir "." en lo numeros, en lugar de eso se puede poner "_"
 
 
 ## función input()
-### 
+ > Una cadena que contiene todos los caracteres que el usuario introduce desde el teclado. No es un entero ni un flotante.
+
+ `x = input("quien sos?...")`
+ 
+ `print("que nombre tan feo...",x)`
 
 
 <br>
