@@ -165,6 +165,7 @@ __IF:__
 la instruccion "range()" acepta 3 parametros, los dos primeros son de donde hasta donde va a ir el for, el tercero es de a cuantos pasos, ej:
 `for in range(2,11,2):`(anda del 2 al 10 pasando de 2 en 2)
 
+Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 
 ---
 ## Prioridades
