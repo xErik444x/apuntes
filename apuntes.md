@@ -96,6 +96,35 @@ Python no permite escribir "." en lo numeros, en lugar de eso se puede poner "_"
  `print("que nombre tan feo...",x)`
 
 
+## Decisiones y operadores
+> igual a (==)  |  no es igual a (!=)
+
+> operador > (mayor que)
+
+> `>= (mayor o igual que) | <= (menor o igual que)`
+
+
+
+## Prioridades
+
+| Prioridad | Operador |
+|---|---|
+|1|+, -|
+|2|**|
+|3|*, /, %|
+|4|+, -	(binario)|
+|5|<, <=, >, >=|
+|6|==, !=|
+
+
+
+
+
+
+
+
+
+
 <br>
 
 ---
