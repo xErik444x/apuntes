@@ -103,13 +103,48 @@ Python no permite escribir "." en lo numeros, en lugar de eso se puede poner "_"
 
 > `>= (mayor o igual que) | <= (menor o igual que)`
 
+__IF:__
+
+    if climaEsBueno:
+        irACaminar()
+    else:
+        irAlCine()
+    almorzar() 
+
+>palabra clave de Python: elif (elseIf mas corto)
+   
+    if climaBueno:
+        iraCaminar()
+    elif hayBoletosDisponibles:
+        IralCine()
+    elif mesasLibres:
+        almorzar()
+    else:
+        jugarAjedrezEnCasa() 
 
 
+## Bucles
+
+    línea 01  numeroMayor = -999999999
+    línea 02  numero = int(input())
+    línea 03  if numero == -1:
+    línea 04  print(numeroMayor)
+    línea 05  exit()
+    línea 06  if numero > numeroMayor:
+    línea 07  numeroMayor = numero
+    línea 08  vaya a la línea 02
+
+ >python trae una palabra clave para saber cual es el mayor de todos, lo vismo para el menor:
+
+    numeroMayor = max(numero1,numero2,numero3)
+    numeroMenor =min(numero1,numero2,numero3)
+  
+---
 ## Prioridades
 
 | Prioridad | Operador |
 |---|---|
-|1|+, -|
+|1|+, - (unario)|
 |2|**|
 |3|*, /, %|
 |4|+, -	(binario)|
