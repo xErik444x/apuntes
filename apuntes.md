@@ -218,10 +218,10 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
     Su prioridad es muy alta: igual que el unario + y -
 
 |Argumento A|not A|
-|---|---|---|
+|---|---|
 |False|True|
 |True|False|
-||||
+|||
 
 ## Valores lógicos vs. bits individuales
 
