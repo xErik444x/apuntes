@@ -167,6 +167,29 @@ la instruccion "range()" acepta 3 parametros, los dos primeros son de donde hast
 
 Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 
+
+## break y continue
+> Palabras claves reservadas.
+
+>Break: Sale del ciclo inmediatamente
+
+    for i in range(1,6):
+        if i == 3:
+            break
+        print("Dentro del ciclo.", i)
+    print("Fuera del ciclo.")
+    #cuando sea 3 termina el ciclo
+
+>Continue: 
+
+    for i in range(1,6):
+        if i == 3:
+            continue
+        print("Dentro del ciclo.", i)
+    print("Fuera del ciclo.")
+    #cuando sea 3 se saltea el contenido del if pero sigue en el bucle. Es como si hubiera llegado al final de ese if.
+
+
 ---
 ## Prioridades
 
@@ -250,7 +273,9 @@ print("Python")`
 > `adan = 6`
 
 `print(juan,maria,adan, sep=",")`
+
 `totalManzanas = juan + maria + adan`
+
 `print ("total de manzanas:", totalManzanas)`
 
 ## Fin Laboratorio variables
