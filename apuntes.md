@@ -132,3 +132,24 @@ print("Python")`
     ""aprendiendo""
     """Python"""
 
+---
+## Laboratorio variables 
+    Crear las variables: juan, maria, y adan.
+    Asignar valores a las variables. El valor debe de ser igual al numero de manzanas que cada quien tenía.
+    Una vez almacenados los números en las variables, imprimir las variables en una línea, y separar cada una de ellas con una coma.
+    Después se debe crear una nueva variable llamada totalManzanas y se debe igualar a la suma de las tres variables anteriores.
+    Imprime el valor almacenado en totalManzanas en la consola.
+
+> `juan = 3`
+
+> `maria = 5`
+
+> `adan = 6`
+
+`print(juan,maria,adan, sep=",")`
+`totalManzanas = juan + maria + adan`
+`print ("total de manzanas:", totalManzanas)`
+
+## Fin Laboratorio variables
+___
+
