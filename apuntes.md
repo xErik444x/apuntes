@@ -139,6 +139,33 @@ __IF:__
     numeroMayor = max(numero1,numero2,numero3)
     numeroMenor =min(numero1,numero2,numero3)
   
+> Impresion multilinea
+
+    """
+    +==================================+
+    | Bienvenido a mi juego, muggle!   |
+    | Introduce un número entero       |
+    | y adivina qué número he          |
+    | elegido para ti.                 |
+    | Entonces,                        |
+    | ¿Cuál es el número secreto?      |
+    +==================================+
+    """
+>While
+
+    while condicion:
+        hacer x cosa
+
+ >For
+
+    for i in range (100):
+        #hacer algo()
+        pass #(Es obligatorio poner algo dentro, el pass no hace nada.)
+
+la instruccion "range()" acepta 3 parametros, los dos primeros son de donde hasta donde va a ir el for, el tercero es de a cuantos pasos, ej:
+`for in range(2,11,2):`(anda del 2 al 10 pasando de 2 en 2)
+
+
 ---
 ## Prioridades
 
