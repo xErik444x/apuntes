@@ -134,7 +134,7 @@ __IF:__
     línea 07  numeroMayor = numero
     línea 08  vaya a la línea 02
 
- >python trae una palabra clave para saber cual es el mayor de todos, lo vismo para el menor:
+ >python trae una palabra clave para saber cual es el mayor de todos, lo mismo para el menor:
 
     numeroMayor = max(numero1,numero2,numero3)
     numeroMenor =min(numero1,numero2,numero3)
