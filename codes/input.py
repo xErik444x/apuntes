@@ -1,0 +1,6 @@
+#Funcion input()
+print("¿Como te llamas?")
+nombre = input()
+print("Hola,",nombre)
+edad = input("¿Cuantos años tienes?")
+print("Así que tienes", edad , "años, interesante...")

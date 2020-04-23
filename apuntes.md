@@ -87,7 +87,14 @@ Python no permite escribir "." en lo numeros, en lugar de eso se puede poner "_"
     "***" este va de derecha a izquierda, rompienda la norma de lectura normal de python
 `print(2 ** 2 ** 3)` 2 ** 3 → 8; 2 ** 8 → 256
 
+
+## función input()
+### 
+
+
 <br>
+
+---
 
 <h1> Let's code! </h1>
 
