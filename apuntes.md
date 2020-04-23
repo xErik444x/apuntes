@@ -216,6 +216,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 >operador unario que realiza una negación lógica
 
     Su prioridad es muy alta: igual que el unario + y -
+
 |Argumento A|not A|
 |---|---|---|
 |False|True|
