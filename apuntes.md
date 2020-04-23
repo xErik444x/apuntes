@@ -152,4 +152,3 @@ print("Python")`
 
 ## Fin Laboratorio variables
 ___
-
