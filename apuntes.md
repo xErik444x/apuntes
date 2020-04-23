@@ -163,7 +163,7 @@ __IF:__
         pass #(Es obligatorio poner algo dentro, el pass no hace nada.)
 
 la instruccion "range()" acepta 3 parametros, los dos primeros son de donde hasta donde va a ir el for, el tercero es de a cuantos pasos, ej:
-`for in range(2,11,2):`(anda del 2 al 10 pasando de 2 en 2)
+`for in range(2,11,2):`(anda del 2 al 10 pasando de 2 en 2) `range(start, stop, step)`
 
 Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 
@@ -190,11 +190,79 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
     #cuando sea 3 se saltea el contenido del if pero sigue en el bucle. Es como si hubiera llegado al final de ese if.
 
 
+## AND
+`contador > 0 and valor == 100 `
+|Argumento A|Argumento B|A y B|
+|---|---|---|
+|False|False|False|
+|False|True|False|
+|True|False|False|
+|True|True|True|
+||||
+## OR
+ >prioridad más baja que and.
+ `contador > 0 or valor == 100 `
+
+    se ejecuta siempre que uno sea verdadero
+|Argumento A|Argumento B|A or B|
+|---|---|---|
+|False|False|False|
+|False|True|True|
+|True|False|True|
+|True|True|True|
+||||
+
+## NOT
+>operador unario que realiza una negación lógica
+
+    Su prioridad es muy alta: igual que el unario + y -
+|Argumento A|not A|
+|---|---|---|
+|False|True|
+|True|False|
+||||
+
+## Valores lógicos vs. bits individuales
+
+    Los operadores lógicos toman sus argumentos como un todo, independientemente de cuántos bits contengan. Los operadores solo conocen el valor: cero (cuando todos los bits se restablecen) significa False; no cero (cuando se establece al menos un bit) significa True.
+
+## Operadores bitwise
+
+ * &  (ampersand) - conjunción a nivel de bits.
+ * |  (barra vertical) - disyunción a nivel de bits.
+ * ~  (tilde) - negación a nivel de bits.
+ * ^  (signo de intercalación) - exclusivo a nivel de bits o (xor).
+
+* &  requieres exactamente dos  1  s para proporcionar  1  como resultado.
+* |  requiere al menos un  1  para proporcionar  1  como resultado.
+* ^  requiere exactamente un  1  para proporcionar  1  como resultado.
+
+
+> Operaciones bitwise (&, |, y ^)
+
+|Arg A|Arg B|A `&` B|A `|` B|A `^` B|
+|:---:|:---:|:---:|:---:|:---:|
+|0|0|0|0|0|
+|0|1|0|1|1|
+|1|0|0|1|1|
+|1|1|1|1|0|
+
+ >(~)
+
+|Arg A|~A|
+|:-:|:-:|
+|0|1|
+|1|0|
+
+
+
+
+
 ---
 ## Prioridades
 
 | Prioridad | Operador |
-|---|---|
+|:---:|---|
 |1|+, - (unario)|
 |2|**|
 |3|*, /, %|
