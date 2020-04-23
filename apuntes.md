@@ -198,7 +198,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 |False|True|False|
 |True|False|False|
 |True|True|True|
-||||
+
 ## OR
  >prioridad más baja que and.
  `contador > 0 or valor == 100 `
@@ -210,7 +210,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 |False|True|True|
 |True|False|True|
 |True|True|True|
-||||
+
 
 ## NOT
 >operador unario que realiza una negación lógica
@@ -221,7 +221,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 |---|---|
 |False|True|
 |True|False|
-|||
+
 
 ## Valores lógicos vs. bits individuales
 
