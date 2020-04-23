@@ -241,7 +241,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 
 > Operaciones bitwise (&, |, y ^)
 
-|Arg A|Arg B|A `&` B|A `|` B|A `^` B|
+| Arg A | Arg B | A `&` B | A `|` B | A `^` B |
 |:---:|:---:|:---:|:---:|:---:|
 |0|0|0|0|0|
 |0|1|0|1|1|
