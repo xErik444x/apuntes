@@ -415,11 +415,35 @@ else:
     numeros = [10, 5, 7, 2, 1]
     print("Contenido de la lista:", numeros) # imprimiendo contenido de la lista original.
 
+    print(numeros[0]) # accediendo al primer elemento de la lista. 
+    print(numeros) # imprimiendo la lista completa.
+
+### Función len()
+
+> Se usa para ver la longitud de una lista.
+ `print("\nLongitud de la lista:", len(numeros))`
+
+### Función del()
+>Se usa para eliminar un index y su valor de una lista.
+ `del numeros[1]`
+
+### Indices Negativos
+>Un elemento con un índice igual a -1 es el último en la lista
+`print(numeros[-1])`
 
 
+## Funciones vs Metodos
+>Una función no pertenece a ningún dato: obtiene datos, puede crear nuevos datos y (generalmente) produce un resultado
+
+>Un método es un tipo específico de función,puede cambiar el estado de una entidad seleccionada.
+
+***Un método es propiedad de los datos para los que trabaja, mientras que una función es propiedad de todo el código.***
 
 
+## Agregar items a la lista
 
+* insert `lista.insert(ubicación,valor)` (se puede elegir la posición)
+* append `lista.append(valor)` (lo coloca al final de la lista)
 
 
 
