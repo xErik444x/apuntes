@@ -228,6 +228,11 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
     Los operadores lógicos toman sus argumentos como un todo, independientemente de cuántos bits contengan. Los operadores solo conocen el valor: cero (cuando todos los bits se restablecen) significa False; no cero (cuando se establece al menos un bit) significa True.
 
 ## Operadores bitwise
+>DATO DE SUMA IMPORTANCIA:
+
+    Los bits se numeran desde cero y el número de bits cero es el más bajo, mientras que el más alto es el número 31.
+>Fin del dato de suma importancia.
+
 > opera sobre números binarios a nivel de bits individuales 0 y 1
 
  * &  (ampersand) - conjunción a nivel de bits.
@@ -257,6 +262,64 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 |1|0|
 
 ## Operaciones lógicas vs operaciones de bit: continuación
+ > Explicación con ejemplos:
+
+    i = 15
+    j = 22 
+    Si asumimos que los enteros se almacenan con 32 bits, la imagen a nivel de bits de las dos variables será la siguiente:
+    i: 00000000000000000000000000001111
+    j: 00000000000000000000000000010110 
+    ambas variables no son 0, por ende, son True:
+     og = i and j 
+     # og vale True
+
+    El operador & operará con cada par de bits correspondientes por separado, ej:
+    i	 000000000000000000000000000 '01111'
+    j	 000000000000000000000000000 '10110' 
+    bit = i & j : 000000000000000000000000000  '00110'
+    como son la mayoria ceros, el operador & va a actuar y comparar en la ultima parte.
+    ej: 0&1 , 1&1,etc, de ahi saca el resultado.
+
+>Negación:
+
+Primero el lógico:
+    ``logneg = not i ``, se establece como False.
+
+La negación a nivel de bits es así: `bitneg = ~i `
+
+    i	        0000000000000000000000000000  1111  
+    bitneg = ~i 1111111111111111111111111111  0000 
+
+## ¿Para qué puedo usar un operador bitwise?
+
+ >Imagina que eres un desarrollador obligado a escribir una pieza importante de un sistema operativo. Se te ha dicho que puedes usar una variable asignada de la siguiente forma:
+
+    flagRegister = 0x1234
+    Cada bit de la variable almacena un valor de si/no.
+    uno de todos esos bits te pertenece, esta marcado con una x:
+    flagRegister = 000000000000000000000000000000x000
+    Si aplicas la operación & a la variable flagRegister vas a tener el siguiente resultado:
+    x & 1 = x
+    0000000000000000000000000000'1'000 si tu bit se estableció en 1
+    0000000000000000000000000000'0'000 si tu bit se reseteo a 0
+
+    Dicha secuencia de ceros y unos, cuya tarea es tomar el valor o cambiar los bits seleccionados, se denomina máscara de bits.
+    Construyamos una máscara de bits para detectar el estado de tus bits. Debería apuntar a el tercer bit. Ese bit tiene el peso de 2E3=8. Se podría crear una máscara adecuada mediante la siguiente declaración:
+    2E3=8
+    theMask = 8
+
+    También puedes hacer una secuencia de instrucciones dependiendo del estado de tu bit i, aquí está:
+`if flagRegister & theMask:
+    # mi bit está listo
+else:
+    # mi bit se restablece `
+
+    Reinicia tu bit: asigna un cero al bit, mientras que todos los otros bits deben permanecer sin cambios:
+`flagRegister = flagRegister & ~theMask`
+
+`flagregister &= ~theMask `
+
+
 
 
 
