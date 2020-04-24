@@ -228,6 +228,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
     Los operadores lógicos toman sus argumentos como un todo, independientemente de cuántos bits contengan. Los operadores solo conocen el valor: cero (cuando todos los bits se restablecen) significa False; no cero (cuando se establece al menos un bit) significa True.
 
 ## Operadores bitwise
+> opera sobre números binarios a nivel de bits individuales 0 y 1
 
  * &  (ampersand) - conjunción a nivel de bits.
  * |  (barra vertical) - disyunción a nivel de bits.
@@ -239,7 +240,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 * ^  requiere exactamente un  1  para proporcionar  1  como resultado.
 
 
-> Operaciones bitwise (&, |, y ^)
+> Operaciones bitwise (&, |{representado con I}, y ^)
 
 | Arg A | Arg B | A `&` B | A `Ι` B | A `^` B |
 |:---:|:---:|:---:|:---:|:---:|
@@ -255,6 +256,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 |0|1|
 |1|0|
 
+## Operaciones lógicas vs operaciones de bit: continuación
 
 
 
