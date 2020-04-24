@@ -319,6 +319,43 @@ else:
 
 `flagregister &= ~theMask `
 
+    Establece tu bit : asigna un 1 a tu bit, mientras que todos los bits restantes deben permanecer sin cambios; usa la siguiente propiedad de disyunción:
+
+`x | 1 = 1`
+
+`x | 0 = x `
+
+    Ya estás listo para configurar su bit con una de las siguientes instrucciones:
+
+`flagRegister = flagRegister | theMask`
+
+`flagRegister |= theMask `
+
+    Niega tu bit: reemplaza un 1 con un 0 y un 0 con un 1
+`x ^ 1 = ~x`
+
+`x ^ 0 = x `
+
+
+    Niega tu bit con las siguientes instrucciones:
+
+`flagRegister = flagRegister ^ theMask`
+
+`flagRegister ^= theMask `
+
+
+## Desplazamiento binario
+> Python ofrece otra operación relacionada con los bits individuales: shifting
+
+`12345 × 10 = 123450 `
+    
+    multiplicar por diez es de hecho un desplazamiento de todos los dígitos a la izquierda y llenar el vacío resultante con cero.
+`12340 ÷ 10 = 1234 `
+
+    Dividir entre diez no es más que desplazar los dígitos a la derecha.
+
+
+
 
 
 
