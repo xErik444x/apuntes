@@ -253,7 +253,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 
 > Operaciones bitwise (&, |{representado con I}, y ^)
 
-| Arg A | Arg B | A `&` B | A `Ι` B | A `^` B |
+| Arg A | Arg B | A `&` B | A \| B | A `^` B |
 |:---:|:---:|:---:|:---:|:---:|
 |0|0|0|0|0|
 |0|1|0|1|1|
@@ -408,6 +408,26 @@ else:
 
 
 
+## Listas / Arrays
+>comienza con un corchete abierto y termina con un corchete cerrado
+`numeros = [ 10, 5, 7, 2, 1] `
+
+    numeros = [10, 5, 7, 2, 1]
+    print("Contenido de la lista:", numeros) # imprimiendo contenido de la lista original.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 ## Prioridades
@@ -424,7 +444,7 @@ else:
 |8|&||
 |9|l||
 |10|&&||
-|11|ll||
+|11|\|\|||
 |12|=, +=, -=, *=, /=, %=, &=, ^=, l=, >>=, <<=ll |
 
 
