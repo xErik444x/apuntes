@@ -389,8 +389,18 @@ else:
 * 17 // 2 → 8 (desplazarse hacia la derecha en un bit equivale a la división de enteros en dos)
 * 17 * 4 → 68 (desplazarse hacia la izquierda dos bits es lo mismo que multiplicar números enteros por cuatro).
 
+        ejercicio bit a bit
+        x = 4 : 0000100
+        y = 1 : 0000001
+        0010000
+        a = x & y : 0000000
+        b = x | y : 0000101
+        c = ~ x : 1111000
+        d = x ^ 5 : 0000101
+        e = x >> 2 : 0000001
+        f = x << 2 : 0010000
 
-
+        print(a, b, c, d, e, f) 
 
 
 
