@@ -445,6 +445,12 @@ else:
 * insert `lista.insert(ubicación,valor)` (se puede elegir la posición)
 * append `lista.append(valor)` (lo coloca al final de la lista)
 
+## Creando una lista vacia
+    miLista = []
+    for i in range (5):
+    #miLista.append (i + 1) #crea la lista de menor a mayor
+    #miLista.insert(0, i + 1) #crea la lista de mayor a menor
+    print(miLista)
 
 
 
