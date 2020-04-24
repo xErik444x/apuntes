@@ -350,9 +350,28 @@ else:
 `12345 × 10 = 123450 `
     
     multiplicar por diez es de hecho un desplazamiento de todos los dígitos a la izquierda y llenar el vacío resultante con cero.
+
 `12340 ÷ 10 = 1234 `
 
     Dividir entre diez no es más que desplazar los dígitos a la derecha.
+>
+    La computadora realiza el mismo tipo de operación, pero con una diferencia: como dos es la base para los números binarios (no 10)
+    Los operadores de cambio en Python son un par de dígrafos: << y >>
+`valor << bits`
+
+`valor >> bits`
+
+    var = 17
+    varRight = var >> 1
+    varLeft = var << 2
+    print(var, varLeft, varRight)
+    #      17     68       8 
+
+* 17 // 2 → 8 (desplazarse hacia la derecha en un bit equivale a la división de enteros en dos)
+* 17 * 4 → 68 (desplazarse hacia la izquierda dos bits es lo mismo que multiplicar números enteros por cuatro).
+
+
+
 
 
 
@@ -364,12 +383,12 @@ else:
 ---
 ## Prioridades
 
-| Prioridad | Operador |
-|:---:|---|
-|1|+, - (unario)|
+| Prioridad | Operador | tipo|
+|:---:|---|---|
+|1|!, ~, (tipo), ++, --, +, -| (unario)|
 |2|**|
 |3|*, /, %|
-|4|+, -	(binario)|
+|4|+, -	|(binario)|
 |5|<, <=, >, >=|
 |6|==, !=|
 
