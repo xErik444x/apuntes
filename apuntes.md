@@ -538,14 +538,8 @@ for:
 
 + No es necesario poner ambos argumentos, se puede colocar solo uno de los dos, por ejemplo, que inicie en 2 y termine al final: `miLista[2:]`. O tambien ` miLista [:5]` , que comienza en 0 y termina en la posicion 5.
 
-        Cuando colocamos el argumento de inicio tenemos que tener en cuenta de que la posicion va a ser la seguida al argumento, no desde el mismo. Ej:
-            miLista = [10, 8, 6, 4, 2]
-            nuevaLista = miLista[3:]
-            print(nuevaLista) # [4,2]
-        Esto NO sucede con el argumento de Fin:
-            miLista = [10, 8, 6, 4, 2]
-            nuevaLista = miLista[:3]
-            print(nuevaLista) # [10, 8, 6]
+
+
 
 
 
