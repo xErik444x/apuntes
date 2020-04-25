@@ -574,10 +574,20 @@ ___
 
         variable1, variable2 = variable2, variable1 
 
-* Usando una lista / Array
-
+* Usando una lista / Array con pocos numeros
+    
         miLista = [10, 1, 8, 3, 5]
         miLista [0], miLista [4] = miLista [4], miLista [0]
         miLista [1], miLista [3] = miLista [3], miLista [1]
         #[5, 3, 8, 1, 10]
 
+* Usando un array con muchos numeros
+  
+        miLista = [10, 1, 8, 3, 5]
+        lon = len(miLista)
+
+        for i in range (lon // 2):
+            miLista[i], miLista[lon-i-1] = miLista[lon-i-1], miLista[i]
+            print(i,lon-i-1)
+        print(miLista) 
+        #[5, 3, 8, 1, 10]
