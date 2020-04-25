@@ -710,6 +710,23 @@ ___
         #[5, 3, 8, 1, 10]
 ---
 
+## buscando numero en array o lista
+
+        miLista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        Encontrar = 5
+        Encontrado = False
+
+        for i in range(len(miLista)):
+            Encontrado = miLista[i] == Encontrar
+            if Encontrado:
+                break
+
+        if Encontrado:
+            print("Elemento encontrado en el índice", i)
+        else:
+            print("ausente")
+
+
 ## Usando Slice para encontrar el mayor de una lista.
 
         miLista = [17, 3, 11, 5, 1, 9, 7, 15, 13]
