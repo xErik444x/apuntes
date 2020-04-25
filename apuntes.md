@@ -453,8 +453,18 @@ else:
     print(miLista)
 
 
+## Puntos claves de un array
 
+* almacena múltiples objetos
+  
++  Las listas pueden estar anidadas, por ejemplo: `miLista = [1, 'a', ["lista", 64, [0, 1], False]]` o `[1, [2, 3], 4]`
+  
++ Las listas pueden ser iteradas mediante el uso del bucle 
+for:
 
+        miLista = ["blanco", "purpura", "azul", "amarillo", "verde"]
+        for color in miLista :
+            print(color) 
 
 
 
