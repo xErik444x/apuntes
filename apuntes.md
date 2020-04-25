@@ -522,6 +522,39 @@ for:
         nuevaLista = miLista[1:3]
         print(nuevaLista) #[8, 6]
 
+## Cosas a tener en cuenta del Slice o Rodaja:
+
++ Acepta indices negativos en el argumento final.
+
+        miLista = [10, 8, 6, 4, 2]
+        nuevaLista = miLista [1:-1]
+        print(nuevaLista) # [8, 6, 4]
+
++ Si pones un argumento que no concuerde a una ubicacion del array al inicio, sin importar el del final, ésta estará vacia, ej:
+  
+        miLista = [10, 8, 6, 4, 2]
+        nuevaLista = miLista [-1:1]
+        print(nuevaLista) # []
+
++ No es necesario poner ambos argumentos, se puede colocar solo uno de los dos, por ejemplo, que inicie en 2 y termine al final: `miLista[2:]`. O tambien ` miLista [:5]` , que comienza en 0 y termina en la posicion 5.
+
+        Cuando colocamos el argumento de inicio tenemos que tener en cuenta de que la posicion va a ser la seguida al argumento, no desde el mismo. Ej:
+            miLista = [10, 8, 6, 4, 2]
+            nuevaLista = miLista[3:]
+            print(nuevaLista) # [4,2]
+        Esto NO sucede con el argumento de Fin:
+            miLista = [10, 8, 6, 4, 2]
+            nuevaLista = miLista[:3]
+            print(nuevaLista) # [10, 8, 6]
+
+
+
+
+
+
+
+
+
 
 
 ---
