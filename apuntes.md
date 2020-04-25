@@ -590,6 +590,36 @@ for:
 > Son arrays dentro de otro array o lista. ej: `[[1,2,3],[3,4,5]]`
 
 
+> Un tablero de ajedrez es un array bidimensional.
+
+    El acceso al campo seleccionado del tablero requiere dos índices: el primero selecciona la fila; el segundo: el número del campo dentro de la fila, el cual es un número de columna.
+
+![Tablero](https://raw.githubusercontent.com/xErik444x/apuntesPython/master/img/tablero.PNG "tablero de ajedrez")
+
++ Torres en las esquinas:
+
+        tablero[0][0] = TORRE
+        tablero[0][7] = TORRE
+        tablero[7][0] = TORRE
+        tablero[7][7] = TORRE
+
++ Generando tablero con torres:
+
+        EMPTY = "-"
+        TORRE = "TORRE"
+        tablero = []
+
+        for i in range(8):
+            fila = [EMPTY for i in range(8)]
+            tablero.append (fila)
+
+        tablero[0][0] = TORRE
+        tablero[0][7] = TORRE
+        tablero[7][0] = TORRE
+        tablero[7][7] = TORRE
+
+        print(tablero)
+
 
 
 
