@@ -573,3 +573,11 @@ ___
         variable2 = 2
 
         variable1, variable2 = variable2, variable1 
+
+* Usando una lista / Array
+
+        miLista = [10, 1, 8, 3, 5]
+        miLista [0], miLista [4] = miLista [4], miLista [0]
+        miLista [1], miLista [3] = miLista [3], miLista [1]
+        #[5, 3, 8, 1, 10]
+
