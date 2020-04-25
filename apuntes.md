@@ -539,10 +539,32 @@ for:
 + No es necesario poner ambos argumentos, se puede colocar solo uno de los dos, por ejemplo, que inicie en 2 y termine al final: `miLista[2:]`. O tambien ` miLista [:5]` , que comienza en 0 y termina en la posicion 5.
 
 
+## Instrucción Del con Slice en array
 
+> Cuando usamos la instruccion Del con un slice, logramos que se eliminen x cantidad de elementos y no solo uno, ej:
 
+        miLista = [10, 8, 6, 4, 2]
+        del miLista[1:3] 
+        print(miLista) # [10, 4, 2]
 
+> Del mismo modo, podemos eliminar todos los elementos:
 
+        miLista = [10, 8, 6, 4, 2]
+        del miLista[:] 
+        print(miLista) # []
+
+>Si usamos del array, vamos a eliminar la lista PERO NO SU CONTENIDO.
+
+        miLista = [10, 8, 6, 4, 2]
+        del miLista 
+        print(miLista)
+
+## Comparaciones de listas con IN y NOT IN
+
+>Estos dos comparadores son capaces de revisar la lista para verificar si un valor específico está almacenado dentro de la lista o no. Ej:
+
+        elem in miLista #Si está dentro, devuelve True
+        elem not in miLista #Si No está dentro, devuelve True
 
 
 
