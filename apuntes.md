@@ -566,8 +566,11 @@ for:
         elem in miLista #Si está dentro, devuelve True
         elem not in miLista #Si No está dentro, devuelve True
 
+        miLista = [0, 3, 12, 8, 2]
 
-
+        print(5 in miLista) # False
+        print(5 not in miLista) # True
+        print(12 in miLista) # True
 
 
 
