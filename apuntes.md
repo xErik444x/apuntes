@@ -491,12 +491,38 @@ for:
         lista2 = lista1
         lista1[0] = 2
         lista1.append(3)
+        lista2.append("hola")
+        print("lista2" , lista2)  #lista2 [2, 3, 'hola']
+        print("lista1" , lista1) #lista1 [2, 3, 'hola']
 
-        print("lista2" , lista2)
-        print("lista1" , lista1)
-        
-        #lista2 [2, 3]
-        #lista1 [2, 3]
+>Si hacemos eso, lo que estamos haciendo es literalmente copiar el nombre de la variable (espacio en memoria) a otra.
+
+## ¿Cómo podemos copiar una lista sin que este ligada a la anterior?
+
+> Esto se puede lograr utilizando un "slice" o "rodaja" asignandole un `:` a la lista nueva, ej:
+
+        lista1 = [1]
+        lista2 = lista1[:]
+        lista1[0] = 2
+        print(lista2)
+        #[1]
+
+> Ya no va a estar ligada, por ende, son dos listas diferentes.
+ 
+>Al "slice" o "rodaja" se le puede asignar dos variables, una de inicio y otra de final, ej:  `miLista[inicio:fin-1]`
+
+        # Copiando toda la lista
+        lista1 = [1]
+        lista2 = lista1[:]
+        lista1[0] = 2
+        print(lista2) #[1]
+
+        # Copiando parte de la lista
+        miLista = [10, 8, 6, 4, 2]
+        nuevaLista = miLista[1:3]
+        print(nuevaLista) #[8, 6]
+
+
 
 ---
 ## Prioridades
