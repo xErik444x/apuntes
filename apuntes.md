@@ -573,6 +573,34 @@ for:
         print(12 in miLista) # True
 
 
+## comprensión de lista
+> una comprensión de lista, la sintaxis especial utilizada por Python para completar o llenar listas masivas. Ej:
+
+        #fila = [PEON_BLANCO for i in range(8)]
+
+        cuadrados = [x ** 2 for x in range(10)]
+        # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+        cuadrados = [x ** 2 for x in range(10)]
+        probabilidades = [x for x in cuadrados if x % 2 != 0] 
+        print(probabilidades) #Impares de la lista
+
+
+## arrays bidimensionales
+> Son arrays dentro de otro array o lista. ej: `[[1,2,3],[3,4,5]]`
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -758,3 +786,16 @@ ___
                 aciertos += 1
                 numerosAcertados.append(numeros)
         print("Aciertos:",aciertos,"Numeros acertados:",numerosAcertados, sep="\n")
+
+## Eliminando repetidos
+
+        miLista = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+
+        for numero in miLista:
+            if numero in miLista:
+                del miLista[numero]
+        miLista.sort()
+
+
+        print("La lista solo con elementos únicos:")
+        print(miLista)
