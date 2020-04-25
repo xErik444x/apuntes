@@ -466,8 +466,37 @@ for:
         for color in miLista :
             print(color) 
 
+## Puntos claves de Arrays / Listas
+* Metodo sort() para ordenar automaticamente.
 
+        lst = [5, 3, 1, 2, 4]
+        print(lst)
 
+        lst.sort ()
+        print(lst) # salida: [1, 2, 3, 4, 5]
+
+* Metodo reverse() para invertir una lista
+
+        lst = [5, 3, 1, 2, 4]
+        print(lst)
+            
+        lst.reverse()
+        print (lst) # salida: [4, 2, 1, 3, 5]
+
+## Almacenamiento de listas en la memoria.
+
+> Las listas se almacenan de diferentes formas que las variables, por ejemplo, si asignamos una lista a otra lista, ambas listas van a estar en el mismo lugar de memoria, si modificamos una, se modifica la otra y viceversa, ej:
+
+        lista1 = [1]
+        lista2 = lista1
+        lista1[0] = 2
+        lista1.append(3)
+
+        print("lista2" , lista2)
+        print("lista1" , lista1)
+        
+        #lista2 [2, 3]
+        #lista1 [2, 3]
 
 ---
 ## Prioridades
