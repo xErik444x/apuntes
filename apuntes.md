@@ -708,3 +708,36 @@ ___
             print(i,lon-i-1)
         print(miLista) 
         #[5, 3, 8, 1, 10]
+---
+
+## Usando Slice para encontrar el mayor de una lista.
+
+        miLista = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+        mayor = miLista [0]
+
+        for i in miLista [1:]: 
+        # si empezamos desde 1 nos salteamos la comparacion 
+        #innecesaria de 17 > 17
+        if i > mayor:
+                mayor = i
+
+        print(mayor) # 17
+
+        Tambien se pude hacer:
+        for i in range(1, len(miLista)):
+        if miLista [i]> mayor:
+                mayor = miLista[i]
+
+        print(mayor) # 17
+
+## Usando In en array
+
+        sorteados = [5, 11, 9, 42, 3, 49]
+        seleccionados = [3, 7, 11, 42, 34, 49]
+        aciertos = 0
+        numerosAcertados = []
+        for numeros in seleccionados:
+            if numeros in sorteados: #si el numero esta en la lista
+                aciertos += 1
+                numerosAcertados.append(numeros)
+        print("Aciertos:",aciertos,"Numeros acertados:",numerosAcertados, sep="\n")
