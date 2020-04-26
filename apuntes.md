@@ -687,7 +687,15 @@ for:
     felizAñoNuevo() # funciona completa
     felizAñoNuevo(False) # llega hasta 'print("uno")'
 
+Otro ejemplo:
 
+    def sumar(a,b):
+        return(a+b)
+    
+    x = int(input("ingrese el primer numero:"))
+    z = int(input("ingrese el segundo numero:"))
+    
+    print(sumar(x,z)) # 4
 
 
 
