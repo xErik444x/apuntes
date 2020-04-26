@@ -667,6 +667,39 @@ for:
         test("hola") # hola ya estoy definido
         test("hola","ahora la defino acá")
             # hola ahora la defino acá
+
+
+
+
+
+## Funcion y Return
+
+> La instrucción `return` devuelve un valor y termina la funcion. Ej:
+
+    def felizAñoNuevo(deseos = True):
+        print("Tres ...")
+        print("Dos ...")
+        print("Uno ...")
+        if not deseos:
+            return
+        print("¡Feliz año nuevo!") 
+    
+    felizAñoNuevo() # funciona completa
+    felizAñoNuevo(False) # llega hasta 'print("uno")'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 ## Prioridades
 
