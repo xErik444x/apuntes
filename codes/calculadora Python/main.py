@@ -1,33 +1,35 @@
+from colorama import Fore,init
 from funciones.calcular import *
 salir = False
 while salir != True:
-    print("""
+    init()
+    print(Fore.MAGENTA + """
     -------------Calculadora re loca--------------
     Seleccione la opción a realizar:
-    1.Sumar
-    2.Restar
-    3.Multiplicar
-    4.Dividir
-    0.Salir
-    9.Limpiar
+    """,Fore.YELLOW+'1',Fore.MAGENTA,""".Sumar
+    """,Fore.YELLOW+'2',Fore.MAGENTA,""".Restar
+    """,Fore.YELLOW+'3',Fore.MAGENTA,""".Multiplicar
+    """,Fore.YELLOW+'4',Fore.MAGENTA,""".Dividir
+    """,Fore.YELLOW+'0',Fore.MAGENTA,""".Salir
+    """,Fore.YELLOW+'9',Fore.MAGENTA,""".Limpiar
     ----------------------------------------------
-    """)
+    """, sep="")
     opcion = int(input("Ingrese la opción:"))
     if opcion == 0:
         salir = True
         print("Finalizado con exito.")
     if opcion == 1:
-        print(sumar())
-        input("Pulse cualquier tecla para continuar:")
+        print(Fore.YELLOW, sumar())
+        input("")
     elif opcion == 2:
-        print(restar())
-        input("Pulse cualquier tecla para continuar:")
+        print(Fore.YELLOW,restar())
+        input("")
     elif opcion == 3:
-        print(multiplicar())
-        input("Pulse cualquier tecla para continuar:")
+        print(Fore.YELLOW+multiplicar())
+        input("")
     elif opcion == 4:
-        print(dividir())
-        input("Pulse cualquier tecla para continuar:")
+        print(Fore.YELLOW+dividir())
+        input("")
     elif opcion == 9:
         limpiar()
     else:
