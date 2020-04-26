@@ -632,23 +632,41 @@ for:
 
 > Declaración:
 
-        def tuFuncion (parámetros opcionales):
+        def tuFuncion ():
             # el cuerpo de la función
 > Ej:
 
-        def hola(nombre): 
-            print("Hola,", nombre) 
+        def hola(): 
+            print("Hola") 
 
+## Parametros en Funciones
 
+> Un parámetro es una variable, pero existen dos factores que hacen a un parámetro diferente:
 
++ Los parámetros solo existen dentro de las funciones en donde han sido definidos.
++ La asignación de un valor a un parámetro de una función se hace en el momento en que la función se manda llamar o se invoca.
++ primero se especifican los argumentos posicionales y después los de palabras clave
 
+        def mensaje(nombreCliente, numero):
+        print("Ingresa", nombreCliente, "número", numero)
 
+> Paso de argumentos con palabras claves (argumento posicional):
+    def presentar (primerNombre, segundoNombre):
+        print("Hola, mi nombre es", primerNombre, segundoNombre)
 
+    presentar(primerNombre = "James", segundoNombre = "Bond")
+    presentar(segundoNombre = "Skywalker", primerNombre = "Luke")
 
+    # el = se usa para decirle en que variable tiene que ir, aca no importa la posicion.
 
+> Se puede definir los valores desde la propia Funcion:
 
-
-
+        def test(a,b = "ya estoy definido"):
+            print(a,b) 
+        
+        test("hola") # hola ya estoy definido
+        test("hola","ahora la defino acá")
+            # hola ahora la defino acá
 ---
 ## Prioridades
 
