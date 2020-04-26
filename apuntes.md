@@ -697,8 +697,22 @@ Otro ejemplo:
     
     print(sumar(x,z)) # 4
 
+## NONE
 
+> Se utiliza para asignar un valor nulo a una variable:
 
+    x = None
++ Si una función no devuelve un cierto valor utilizando una cláusula de expresión return, se asume que devuelve implícitamente None
+
+> Retornando un valor None o True dependiendo del argumento:
+
+        def strangeFunction(n):
+            if(n % 2 == 0):
+                return True
+                # si no es par, retorna un valor None
+                
+        if (strangeFunction(2)): # Si retorna True
+            print("hola mundo")
 
 
 
