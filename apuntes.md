@@ -228,7 +228,7 @@ Si el range no lleva a ningun lado no se va a ejecutar tipo: `range(1,1)`
 + **or** → si alguno de los operandos es verdadero, la condición es verdadera, por ejemplo, **(True or False)** es **True**.
 + **not** → devuelve False si el resultado es verdadero y devuelve True si es falso, por ejemplo, **not True** es **False**.
 
-
+---
 ## Valores lógicos vs. bits individuales
 
     Los operadores lógicos toman sus argumentos como un todo, independientemente de cuántos bits contengan. Los operadores solo conocen el valor: cero (cuando todos los bits se restablecen) significa False; no cero (cuando se establece al menos un bit) significa True.
@@ -404,7 +404,7 @@ else:
 
 
 
-
+---
 
 
 
@@ -619,10 +619,25 @@ for:
         tablero[7][7] = TORRE
 
         print(tablero)
+---
 
+## Funciones
 
+### ¿De dónde provienen las funciones?
 
++ De Python mismo: varias funciones (como print()) son una parte integral de Python.
++ De los módulos preinstalados de Python.
++ Directamente del código.
++ Existe una posibilidad más, pero se relaciona con clases, se omitirá por ahora.
 
+> Declaración:
+
+        def tuFuncion (parámetros opcionales):
+            # el cuerpo de la función
+> Ej:
+
+        def hola(nombre): 
+            print("Hola,", nombre) 
 
 
 
