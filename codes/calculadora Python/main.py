@@ -25,10 +25,10 @@ while salir != True:
         print(Fore.YELLOW,restar())
         input("")
     elif opcion == 3:
-        print(Fore.YELLOW+multiplicar())
+        print(Fore.YELLOW,multiplicar())
         input("")
     elif opcion == 4:
-        print(Fore.YELLOW+dividir())
+        print(Fore.YELLOW,dividir())
         input("")
     elif opcion == 9:
         limpiar()
