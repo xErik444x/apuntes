@@ -714,6 +714,16 @@ Otro ejemplo:
         if (strangeFunction(2)): # Si retorna True
             print("hola mundo")
 
+## Listas apartir de funciones:
+
+    def strangeListFunction(n):
+        strangeList = []
+        for i in range(0, n):
+            strangeList.insert(0,n+i)
+        return strangeList
+
+    print(strangeListFunction(5)) #[9, 8, 7, 6, 5]
+
 
 
 
