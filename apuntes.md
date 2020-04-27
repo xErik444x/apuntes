@@ -737,6 +737,25 @@ Otro ejemplo:
         variable = 1
         miFuncion() #1
 
+> ¿Una función es capaz de modificar una variable que fue definida fuera de ella? 
+  + NO.
+
+## Palabra reservada "global"
+
+> Respondiendo la pregunta de arriba otra vez, es posible modificar una variable utilizando la palabra reservada "global" de la siguiente manera:
+
+        def miFuncion():
+            global var
+            var = 2
+            print("¿Conozco a aquella variable?", var)
+        var = 1
+        miFuncion() # var = 2
+        print(var)# 2
+
+
+
+
+
 
 
 ---
@@ -934,3 +953,8 @@ ___
 
         print("La lista solo con elementos únicos:")
         print(miLista)
+---
+
+## Funciones Simples: Calcular el IMC
+
+["IMC"]:
