@@ -956,5 +956,24 @@ ___
 ---
 
 ## Funciones Simples: Calcular el IMC
+> el IMC e el peso ideal basado en la estatura
 
-["IMC"]:
+!["IMC"](https://raw.githubusercontent.com/xErik444x/apuntesPython/master/img/imc.png "Imagen IMC CALCULO")
+
+        def imc(peso, altura):
+            return peso / altura ** 2
+
+        print(imc(52.5, 1.65))
+
+---
+## Funcion con recursividad
+
+        def factorialFun(n):
+            if n < 0:
+                return None
+            if n < 2:
+                return 1
+            return n * factorialFun(n - 1)
+            
+        print(factorialFun(10))
+         #3628800
