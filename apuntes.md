@@ -729,6 +729,13 @@ Otro ejemplo:
 
 
 
+## Las funciones y sus alcances (scopes)
+ > Las funciones pueden usar variables definidas anteriormente de ser llamadas
+        def miFuncion():
+            print("¿Conozco a la variable?", variable)
+
+        variable = 1
+        miFuncion() #1
 
 
 
