@@ -756,6 +756,36 @@ Otro ejemplo:
 
 
 
+## Tipos de secuencias y mutabilidad
+
+> Un tipo de secuencia es un tipo de dato en Python el cual es capaz de almacenar mas de un valor (o ninguno si la secuencia esta vacía), los cuales pueden ser secuencialmente (de ahí el nombre) examinados, elemento por elemento.
+
+>  la mutabilidad - es una propiedad de cualquier tipo de dato en Python que describe su disponibilidad para poder cambiar libremente durante la ejecución de un programa. Existen dos tipos de datos en Python: mutables e inmutables. Los datos mutables pueden ser actualizados libremente en cualquier momento, a esta operación se le denomina "in situ".
+
+    Ej: list.append(1)
+
+> Los datos inmutables no pueden ser modificados de esta manera.
+
+> El tipo de datos que se desea tratar ahora se llama ***tupla***. Una ***tupla*** es una secuencia inmutable. Se puede comportar como una lista pero no puede ser modificada en el momento.
+
+
+
+
+## ¿Qué es una tupla?
+
+> Lo primero que distingue una lista de una tupla es la sintaxis empleada para crearlas. Las tuplas utilizan paréntesis, mientras que las listas usan corchetes, aunque también es posible crear una tupla tan solo separando los valores por comas.
+
+        tupla1 = (1, 2, 4, 8)
+        tupla2 = 1., .5, .25, .125
+> Si se desea crear una tupla de un solo elemento se debe poner una coma `(7,)`
+> LAS TUPLAS NO PUEDEN MODIFICARSE, DEBIDO A ESO SON INMUTABLES
+
+
+
+
+
+
+
 
 
 ---
