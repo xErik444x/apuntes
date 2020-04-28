@@ -781,6 +781,28 @@ Otro ejemplo:
 > LAS TUPLAS NO PUEDEN MODIFICARSE, DEBIDO A ESO SON INMUTABLES
 
 
+## ¿Cómo utilizar una tupla?
+
++ La función ***len()*** acepta tuplas, y regresa el numero de elementos contenidos dentro.
++ El operador ***+*** puede unir tuplas (ya se ha mostrado esto antes).
++ El operador ******* puede multiplicar las tuplas, así como las listas.
++ Los operadores ***in*** y ***not in*** funcionan de la misma manera que en las listas.
+
+        miTupla = (1, 10, 100)
+        t1 = miTupla + (1000, 10000)
+        t2 = miTupla * 3
+
+        print(len(t2)) #9
+        print(t1) #(1, 10, 100,1000, 10000)
+        print(t2) #(1, 10, 100,1, 10, 100,1, 10, 100)
+        print(10 in miTupla) # True
+        print(-10 not in miTupla) # True
+
+
+
+
+
+
 
 
 
