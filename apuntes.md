@@ -798,6 +798,181 @@ Otro ejemplo:
         print(10 in miTupla) # True
         print(-10 not in miTupla) # True
 
+## ¿Qué es un diccionario?
+
+> El diccionario es otro tipo de estructura de datos de Python. No es una secuencia (pero puede adaptarse fácilmente a un procesamiento secuencial) y además es mutable.
+
+> Un diccionario en Python funciona de la misma manera que un diccionario bilingüe. Por ejemplo, se tiene la palabra en español "gato" y se necesita su equivalente en francés.
+
+>En el mundo de Python, la palabra que se esta buscando se denomina clave(key). La palabra que se obtiene del diccionario es denominada valor. Esto significa que un diccionario es un conjunto de pares de claves y valores. Nota:
+
+* Cada clave debe de ser única. No es posible tener una clave duplicada.
+* Una clave puede ser un tipo de dato de cualquier tipo: puede ser un número (entero o flotante), o incluso una cadena.
+* Un diccionario no es una lista. Una lista contiene un conjunto de valores numerados, mientras que un diccionario ***almacena pares de valores***.
+* La función ***len() aplica también para los diccionarios***, regresa la cantidad de pares (clave-valor) en el diccionario.
+* ***Un diccionario es una herramienta de un solo sentido***. Si fuese un diccionario español-francés, podríamos buscar en español para encontrar su contraparte en francés mas no viceversa.
+
+## ¿Cómo crear un diccionario?
+
+> El primer diccionario es muy simple, es un diccionario Español-Francés. El segundo es un directorio telefónico muy pequeño.
+
+    dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+    numerosTelefono = {'jefe' : 5551234567, 'Suzy' : 22657854310}
+    diccionarioVacio = {}
+
+    print(dict) #{'gato': 'chat', 'perro': 'chien', 'caballo': 'cheval'}
+    print(numerosTelefono) #{'jefe': 5551234567, 'Suzy': 22657854310}
+    print(diccionarioVacio) #{}
+
+
+> En este primer ejemplo, el diccionario emplea claves y valores las cuales ambas son cadenas. En el segundo, las claves con cadenas pero los valores son enteros.
+
+> La lista de todos los pares es encerrada con llaves, mientras que los pares son separados por comas, y las claves y valores por dos puntos.
+
++ Los diccionarios no son listas 
++ No guardan el orden de sus datos, el orden no tiene significado (a diferencia de los diccionarios reales).
++ El orden en que un diccionario almacena sus datos esta fuera de nuestro control. Esto es normal.
++ En Python 3.6x los diccionarios se han convertido en colecciones ordenadas de manera predeterminada.
+
+Ejemplos de codigo:
+
+    dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+    numerosTelefono = {'jefe' : 5551234567, 'Suzy' : 22657854310}
+    diccionarioVacio = {}
+
+    print(dict['caballo'],numerosTelefono['jefe'])
+    # cheval 5551234567
+
+    ----------------------------------------------
+    
+    dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+    words = ['gato', 'leon', 'caballo']
+
+    for word in words:
+        if word in dict:
+            print(word, "->", dict[word])
+        else:
+            print(word, "no está en el diccionario")
+
+                        #cheval 5551234567
+                        #gato -> chat
+                        #leon no está en el diccionario
+                        #caballo -> cheval
+
+
+<br>
+
+## ¿Cómo utilizar un diccionario? El método keys()
+
+> ¿Pueden los diccionarios ser examinados utilizando el bucle for, como las listas o tuplas?
+
+* No y si.
+
+> No, porque un diccionario no es un tipo de dato secuencial - el bucle for no es útil aquí.
+
+> Si, porque hay herramientas simples y muy efectivas que pueden adaptar cualquier diccionario a los requerimientos del bucle for (en otras palabras, se construye un enlace intermedio entre el diccionario y una entidad secuencial temporal).
+
++ El primero de ellos es un método denominado keys()
+
+>  El método retorna o regresa una lista de todas las claves dentro del diccionario.
+
+    dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+    for key in dict.keys():
+        print(key, "->", dict[key])
+    
+            #gato -> chat
+            #perro -> chien
+            #caballo -> cheval
+
+
+## La función sorted()
+
+> Ordenar un diccionario :
+        
+        for key in sorted(dict.keys()):
+
+        #caballo -> cheval
+        #gato -> chat
+        #perro -> chien
+
+## ¿Cómo utilizar un diccionario? Los métodos item() y values()
+
++ El método ***items()***. Este método regresa una lista de tuplas, donde cada tupla es un par de cada clave con su valor.
+
+        dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+        for spanish, french in dict.items():
+            print(spanish, "->", french)
+
+        #gato -> chat
+        #perro -> chien
+        #caballo -> cheval
+
++ El método ***values()***, funciona de manera muy similar al de keys(), pero regresa una lista de valores.
+
+        dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+        for french in dict.values():
+            print(french)
+        #cheval
+        #chien
+        #chat
+
+
+## ¿Cómo utilizar un diccionario? Modificar, agregar y eliminar valores
+
++ Modificar:
+
+        dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+        dict['gato'] = 'minou'
+        #Ahora gato vale minou
+
+* Agregar, es lo mismo que modificar, solo que si no existe la clave, crea una nueva:
+
+        dict['pato'] = 'patitou'
+
+* Otra forma de agregar es usando el metodo Update:
+
+        dict.update({"paloma" : "grugru"})
+
+* Eliminar:
+
+        del dict['paloma']
+        # Si la clave no existe, va a dar error.
+
+* Para eliminar el ultimo elemento de la lista, se puede emplear el método popitem().
+
+        dict = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+        dict.popitem() # va a eliminar caballo
+
+
+## Las tuplas y los diccionarios pueden trabajar juntos
+        grupo = {}
+
+        while True:
+            nombre = input("Ingresa el nombre del estudiante (o exit para detenerse): ")
+            if nombre == 'exit':
+                break
+            
+            calif = int(input("Ingresa la calificación del alumno (0-10): "))
+            
+            if nombre in grupo:
+                grupo[nombre] += (calif,) 
+                # {'Erik': (10, 7, 4)}
+            else:
+                grupo[nombre] = (calif,)
+
+        print(grupo)
+
+        for nombre in sorted(grupo.keys()):
+            sum = 0
+            contador = 0
+            for calif in grupo[nombre]: 
+            #for de las notas dentro del nombre
+                sum += calif
+                contador += 1
+            print(nombre, ":", sum / contador)
 
 
 
