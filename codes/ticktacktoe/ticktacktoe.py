@@ -45,7 +45,6 @@ def EnterMove(board):
         EnterMove(board)
 # #
 # # la función examina el tablero y construye una lista de todos los cuadros vacíos 
-# # la lista esta compuesta por tuplas, cada tupla es un par de números que indican la fila y columna
 # #
 def MakeListOfFreeFields(board):
     libres=[]
