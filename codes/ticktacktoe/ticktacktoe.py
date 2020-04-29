@@ -1,17 +1,18 @@
 from random import randrange
-
+from colorama import Fore,init,Style
+init()
 # #
 # # la función acepta un parámetro el cual contiene el estado actual del tablero
 # # y lo muestra en la consola
 # #
 def DisplayBoard(board):
-    print("+-------" * 3,"+",sep="")
+    print(Fore.YELLOW," ","+---------" * 3,"+",sep="")
     for linea in range(3):
-        print("|   ",end="")
+        print(Fore.YELLOW,"|   ",end="")
         for col in range(3):
-            print(board[linea][col] ,end="   |   ")
+            print(Fore.GREEN,board[linea][col],Fore.YELLOW ,end="   |   ")
         print()
-    print("+-------" * 3,"+",sep="")
+    print(Fore.YELLOW," ","+---------" * 3,"+",sep="")
     if(len(MakeListOfFreeFields(board))<=0):
         return(print("Empate"))
     if turno == 0:
