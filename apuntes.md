@@ -975,15 +975,70 @@ Ejemplos de codigo:
             print(nombre, ":", sum / contador)
 
 
+## Puntos clave, Diccionario:
+
+* Ver claves y valores:
+
+        for clave, valor in polEspDict.items():
+        print("Pol/Esp ->", clave, ":", valor)
+
+* Comprobar si existe una clave:
+
+        if "zamek" in polEspDict:
+            print("SI")
+        else:
+            print("NO")
+
+* Eliminar un elemento, todos y eliminar todo el diccionario:
+
+        del polEspDict["zamek"] 
+        polEspDict.clear() #Limpia el diccionario
+        del polEspDict # Lo elimina
+
+* Copiar un diccionario:
+
+        copyDict = polEspDict.copy()
 
 
 
+## Puntos Claves: Tuplas y diccionarios Ejemplos:
 
+        tup = 1, 2, 3
+        a, b, c = tup
 
+        print(a * b * c) #6, e desempaqueta tup
 
+ > Buscar duplicados:
 
+        tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+        duplicados = tup.count(2)
+        print(duplicados)    # salida: 4
 
+> Unir Diccionarios:
 
+        d1 = {'Adam Smith':'A', 'Judy Paxton':'B+'}
+        d2 = {'Mary Louis':'A', 'Patrick White':'C'}
+        d3 = {}
+
+        for elemento in (d1, d2):
+        d3.update(elemento)
+
+        print(d3)
+
+> Diccionario a Tupla:
+
+        l = ["carro", "Ford", "flor", "Tulipán"]
+
+        t = tuple(l)
+        print(t)
+
+> Tupla a Diccionario
+
+        colores = (("verde", "#008000"), ("azul", "#0000FF"))
+
+        colDiccionario = colDiccionario(colores)
+
+        print(colDiccionario)
 
 ---
 ## Prioridades
