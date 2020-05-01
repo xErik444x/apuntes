@@ -51,3 +51,63 @@
 + from modulo import *
 + import modulo
 + import modulo as mod
++ from math import pi as PI, sin as sine
+
+
+## Como ver las funciones o nombres de entidades de un modulo
+
+        import math
+
+        for name in dir(math):
+            print(name, end="\t")
+
+
+## Modulo Random
+
+        from random import random
+
+        print(random())
+
+## Modulo para ver datos del SO
+        from platform import platform
+
+        print(platform()) #windows x 
+
+        from platform import system
+
+        print(system()) #windows
+---
+        from platform import machine
+
+        print(machine()) #x86
+---
+        from platform import processor
+
+        print(processor()) #i5
+
+
+# palabras claves de un modulo
+
++ `__name__` se utiliza para saber si el modulo es ejecutado como modulo o como archivo principal
+        
+        if __name__ == "main":
+            soy el archivo principal
+        else: # (retorna el nombre del modulo)
+            soy un modulo
+
+## Paquetes y modulos
+
+![Paquete](https://raw.githubusercontent.com/xErik444x/apuntesPython/master/img/paquete.png)
+
+>Aspectos importantes:
+
++ Un módulo es un contenedor lleno de funciones
++ Crear muchos módulos puede causar desorden
++ un paquete: en el mundo de los módulos, un paquete juega un papel similar al de una carpeta o directorio en el mundo de los archivos.
+  
+## ¿Cómo entrar a una carpeta que contiene el modulo?
+
+    #en el main
+    from sys import path
+    path.append('..\\modules')
+    import modulo
