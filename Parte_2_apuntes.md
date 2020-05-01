@@ -45,3 +45,9 @@
         print(math.sin(math.pi/2))
         #0.99999999
         #1.0
+
+## Palabras claves al importar
+
++ from modulo import *
++ import modulo
++ import modulo as mod
