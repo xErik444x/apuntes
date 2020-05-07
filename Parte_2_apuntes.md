@@ -161,3 +161,70 @@ Después, Python intenta realizar la acción arriesgada: si falla, se genera una
         print("FIN.")
 
 
+## Valor unicode o Ascii
+> se puede saber empleando la función: ord("a")
+> Se puede saber a que corresponde un numero en ascii o unicode con : chr(97)
+
+## Indexando cadenas
+
+                exampleString = 'hola'
+
+                for ix in range(len(exampleString)):
+                print(exampleString[ix], end=' ')
+
+                #h o l a
+
+## Haciendo un slice a una cadena
+
+                alpha = "abdefg"
+
+                print(alpha[1:3]) #bd
+                print(alpha[3:]) #efg
+                print(alpha[:3]) #abd
+                print(alpha[3:-2]) #e
+                print(alpha[-3:4]) #e
+                print(alpha[::2]) #adf
+                print(alpha[1::2]) #beg
+
+## Comprobacion de valor dentro de un String
+
+                alpfabeto = "abcdefghijklmnopqrstuvwxyz"
+
+                print("f" in alpfabeto) # True
+
+> las cadenas ***NO SON LISTAS***, por ende, no aceptan metodos del tipo ***del,insert o append***
+
+## Funcion min()
+
+        print(min("aAbByYzZ"))
+> Lo que hace es buscar el menor en la tabla ascii "A"
+
+## Funcion max()
+
+        print(max("aAbByYzZ"))
+> Lo que hace es buscar el mayor en la tabla ascii "z"
+
+## Metodo index()
+
+> busca la secuencia desde el principio, para encontrar el primer elemento del valor especificado en su argumento.
+
+        print("aAbByYzZaA".index("b")) # 2
+
+## Convertir texto a lista y metodo count()
+
+> Convertir texto a lista: list("abcabc")
+> Contar las veces que aparece x cosa en la lista: "abcabc".count("b") # 2
+
+## Metodo capitalize()
+
+> Convierte toda la cadena segun la primera letra o caracter.
++ Si existe la primer letra, entonces, la hace mayusculas y las demas minisculas ej
++ - capitalize("aBCD") # Abcd
+
+## método center()
+
+> Su función es centrar el texto, ej:
+
+        print('[' + 'alfa'.center(10) + ']') # [   alfa   ]
+        print('[' + 'alfa'.center(30,"*") + ']') # [*************alfa*************]
++ El centrado se realiza realmente al agregar algunos espacios antes y después de la cadena.
