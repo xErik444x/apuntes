@@ -249,3 +249,39 @@ Después, Python intenta realizar la acción arriesgada: si falla, se genera una
 > isalnum() Devuelve True si la cadena contiene numeros, no importa si tiene letras. "ads12".isalnum() #True
 > isalpha() da True si solo contiene letras "ads12".isalnum() #False
 > isdigit() Busca solo digitos "123".isalnum() #True
+
+## Métodos para comprobar cosas en las cadenas xd
+
+> islower() Solo acepta letras minusculas
+> isspace() Comprueba si hay espacios
+> isupper() Comprueba si hay mayusculas
+
+## Método join()
+> Realiza una union, toma como argumento una lista(que no sea de varias dimensiones) y crea una apartir de este argumento, ej:
+        print("-".join(["omicron", "pi", "rho"])) (Se toma como primer argumento el separador y luego va el .join.)
+
+## Método lower()
+> Transforma el String en minusculas.
++ - `print("SiGmA=60".lower()) # sigma=60`
+  
+## Método lstrip()
+>  devuelve una cadena recién creada formada a partir de la original eliminando todos los espacios en blanco iniciales.
++ - `print("        tau ".lstrip() + "]")` # "tau ]"
+
+> Tambien acepta parametros, en este caso, eliminaria de la cadena, todo lo que coincida con el parametro:
++ - `print("www.erikschwerdt.ml".lstrip("w."))` # erikschwerdt.ml
++ - `print("pythoninstitute.org".lstrip(".org"))` # pythoninstitute.org (no puede reemplazar la ultima parte del string)
+
+## Método replace()
+> Reemplaza en el String lo que le pasemos por argumento:
++ - `print("Que onda prros !".replace("onda", ""))` #Que prros!
++ + - `print("Que onda prros !".replace("onda", "feos"))` #Que feos prros!
+> El 3er argumento se utiliza para las veces que queremos reemplazar
++ - `print("This is it!".replace("is", "are", 2))` # thare are it!
+
+## Método rfind()
+> Hace lo mismo que el metodo find(), pero en reversa, va del ultimo al primero. (la r) es de reverse
+
+## método rstrip()
+> Hace lo mismo que el metodo lstrip(), pero en reversa, ej:
++ - `print("cisco.com".rstrip(".com"))` # cis
