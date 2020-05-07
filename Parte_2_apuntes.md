@@ -212,7 +212,7 @@ Después, Python intenta realizar la acción arriesgada: si falla, se genera una
 
 ## Convertir texto a lista y metodo count()
 
-> Convertir texto a lista: list("abcabc")
+> Convertir texto a lista: list("abcabc") # [a,b,c,etc]
 > Contar las veces que aparece x cosa en la lista: "abcabc".count("b") # 2
 
 ## Metodo capitalize()
@@ -285,3 +285,16 @@ Después, Python intenta realizar la acción arriesgada: si falla, se genera una
 ## método rstrip()
 > Hace lo mismo que el metodo lstrip(), pero en reversa, ej:
 + - `print("cisco.com".rstrip(".com"))` # cis
+
+## Método split()
+> Divide la cadena y crea una lista de todas las subcadenas detectadas.
+> Se puede usar join() para volver a unir las listas
+
+## Método startswith()
+> comprueba si una cadena dada comienza con la subcadena especificada. "asd".startswith("a") # True
+
+## Métodos para intercambiar entre mayusculas y minusculas
+
+>  swapcase() Alterna las letras segun si estan en mayus o minus.
+> title() Cambia solo la primer palabra a mayusculas y las demas a minusculas.
+> upper() Altera toda la cadena volviendola a mayusculas.
