@@ -228,3 +228,24 @@ Después, Python intenta realizar la acción arriesgada: si falla, se genera una
         print('[' + 'alfa'.center(10) + ']') # [   alfa   ]
         print('[' + 'alfa'.center(30,"*") + ']') # [*************alfa*************]
 + El centrado se realiza realmente al agregar algunos espacios antes y después de la cadena.
+
+## método endswith()
+
+> Comprueba si la cadena termina en un valor definido, ej:
+
+        if "casa".endswith("sa"):
+        print("si, casa termina en 'sa'")
+        else:
+        print("no, casa no termina en 'sa'")
+
+## método find()
+
+> Busca la posicion de una cadena dentro de otra, si no la encuentra devuelve el valor "-1", funciona casi como el metodo index.
+        print("Eta".find("ta")) # 1
+        print("Eta".find("asdasdas")) # -1
+
+## Métodos para comprobar si la cadena contiene letras y/o numeros
+
+> isalnum() Devuelve True si la cadena contiene numeros, no importa si tiene letras. "ads12".isalnum() #True
+> isalpha() da True si solo contiene letras "ads12".isalnum() #False
+> isdigit() Busca solo digitos "123".isalnum() #True
