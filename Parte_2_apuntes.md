@@ -111,3 +111,53 @@
     from sys import path
     path.append('..\\modules')
     import modulo
+
+
+## Try and except
+
++ La palabra reservada try comienza con un bloque de código el cual puede o no estar funcionando correctamente.
+Después, Python intenta realizar la acción arriesgada: si falla, se genera una excepción y Python comienza a buscar una solución.
++ La palabra reservada except comienza con un bloque de código que será ejecutado si algo dentro del bloque try sale mal ç
++ si se genera una excepción dentro del bloque anterior try, fallará aquí, entonces el código ubicado después de la palabra clave except debería proporcionar una reacción adecuada a la excepción planteada.
++ Se regresa al nivel de anidación anterior, es decir, se termina la sección try-except.
+
+        try:
+                :
+                :
+        except:
+                :
+                :
+
+
+                BaseException
+                        ↑
+                Exception
+                        ↑
+                ArithmeticError
+                        ↑
+                ZeroDivisionError
+
+        try:
+        y = 1 / 0
+        except ZeroDivisionError:
+        print("¡División entre Cero!")
+        except ArithmeticError:
+        print("¡Problema aritmético!")
+
+        print("FIN.")
+
+## Funcion raise 
+
+> Esta funcion lo que hace es generar una excepcion de diferentes tipos, estos son definidos por el programador:
+
+        def badFun(n):
+    raise ZeroDivisionError
+
+        try:
+        badFun(0)
+        except ArithmeticError:
+        print("¿Que pasó? ¿Un error?")
+
+        print("FIN.")
+
+
