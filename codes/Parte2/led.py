@@ -58,7 +58,6 @@ def generarLed(numero):
                 xnumeros += " "
         xnumeros += "\n"
     print(xnumeros)
-    print("length: ",len(numero))
 
 inNumero = input("Ingresa el numero:")
 listaDeNumeros = list(inNumero)
