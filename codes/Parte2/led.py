@@ -50,6 +50,7 @@ numeros2 = [
 ,"###"
 ,"  #"
 ,"  #"]]
+
 def generarLed(numero):
     xnumeros = ""
     for x in range(5):
