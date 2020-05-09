@@ -298,3 +298,8 @@ Después, Python intenta realizar la acción arriesgada: si falla, se genera una
 >  swapcase() Alterna las letras segun si estan en mayus o minus.
 > title() Cambia solo la primer palabra a mayusculas y las demas a minusculas.
 > upper() Altera toda la cadena volviendola a mayusculas.
+
+## Ordenar Listas de palabras
+> Se utiliza la funcion sorted() 
+                firstGreek = ['omega', 'alfa', 'pi', 'gama']
+                firstGreek2 = sorted(firstGreek)        
