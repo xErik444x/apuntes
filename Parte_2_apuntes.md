@@ -248,7 +248,7 @@ Después, Python intenta realizar la acción arriesgada: si falla, se genera una
 
 > isalnum() Devuelve True si la cadena contiene numeros, no importa si tiene letras. "ads12".isalnum() #True
 > isalpha() da True si solo contiene letras "ads12".isalnum() #False
-> isdigit() Busca solo digitos "123".isalnum() #True
+> isdigit() Busca solo digitos "123".isdigit() #True
 
 ## Métodos para comprobar cosas en las cadenas xd
 

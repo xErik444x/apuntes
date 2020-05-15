@@ -56,14 +56,24 @@ def generarLed(numero):
     for x in range(5):
         for z in numero:
                 xnumeros +=(numeros2[int(z)][x])
-                xnumeros += " "
+                xnumeros += "   "
         xnumeros += "\n"
     print(xnumeros)
 
-inNumero = input("Ingresa el numero:")
-listaDeNumeros = list(inNumero)
-
-generarLed(listaDeNumeros)
+ejecutar = True
+print("------------|Numeros a Led|------------")
+print("-Para salir presione -1 -")
+while ejecutar:
+    inNumero = input("Ingresa el numero:") #26 maximo
+    if inNumero == "-1":
+        ejecutar = False
+        exit()
+    if inNumero.isdigit():
+        if int(inNumero) > 0:
+            listaDeNumeros = list(inNumero)
+            generarLed(listaDeNumeros)
+    else:
+        print("el numero ingresado no es valido.")
 
 
 
