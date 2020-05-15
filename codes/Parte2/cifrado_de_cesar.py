@@ -1,4 +1,3 @@
-
 x = False
 while x == False:
     print("""
@@ -25,7 +24,8 @@ while x == False:
             if code > ord('Z'):
                 code = ord('A')
             cifrado += chr(code)
-        print("Cifrado: ",cifrado)
+        print("Cifrado: ", cifrado)
+        input()
     if y == '2':
         # Cifrado César
         text = input("Ingresa tu mensaje Cifrado: ")
@@ -38,4 +38,7 @@ while x == False:
             if code > ord('Z'):
                 code = ord('A')
             cifrado += chr(code)
-        print("Descifrado: ",cifrado)
+        print("Descifrado: ", cifrado)
+        input()
+    if y == '3':
+        x = True
