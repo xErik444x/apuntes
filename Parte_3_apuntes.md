@@ -30,3 +30,24 @@
                 objetoPila = Pila()
                 print(len(objetoPila.__listaPila)) # va a dar error porque no lo ejecutamos desde la clase, sino desde fuera.
 
+## Comprobar si un objeto contiene un atributo
+> hasattr(objeto,atributo)
+                class ClaseEjemplo:
+                attr = 1
+
+                print(hasattr(ClaseEjemplo, 'attr'))
+                print(hasattr(ClaseEjemplo, 'prop'))
+
+## Algunos nombres de metodos para clases
++ __init__
+  - Es el constructor de la clase. 
++ __nombre
+  - un método cuyo nombre comienza con '__' está (parcialmente) oculto.
+
+                def __oculto(self)
+                obj._conClase__oculto()
+
++ __dict__ 
+  - Muestra las propiedades y metodos de la clase / objeto
++ __name__
+  - Devuelve el nombre de la clase
