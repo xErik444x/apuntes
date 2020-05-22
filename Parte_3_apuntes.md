@@ -85,3 +85,20 @@
 
 ## Herencia: isinstance()
 > Para identificar si un objeto proviene de una clase se utiliza: `isinstance(nombreObjeto, nombreClase)`
+
+## Obtener los metodos de la clase padre:
+
+      class Super:
+          def __init__(self, nombre):
+              self.nombre = nombre
+
+          def __str__(self):
+              return "Mi nombre es " + self.nombre + "."
+
+      class Sub(Super):
+          def __init__(self, nombre):
+              Super.__init__(self, nombre) # Se utiliza el nombre de la clase a heredar para obtener su constructor
+
+      obj = Sub("Andy")
+
+      print(obj)
