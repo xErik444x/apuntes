@@ -67,3 +67,21 @@
 + **Reflexión**, que va un paso más allá, y es la capacidad de un programa para manipular los valores, propiedades y/o funciones de un objeto en tiempo de ejecución.
   
 ## Herencia
+> Cuando python necesita que una clase sea representada por un string (print) llama a un metodo llamado `__str__()`, este puede ser modificado por nosotros:
+
+    class Estrella:
+        def __init__(self, nombre, galaxia):
+            self.nombre = nombre
+            self.galaxia = galaxia
+
+        def __str__(self): # Nuestro propio __str__
+            return self.nombre + ' en la ' + self.galaxia
+
+    sol = Estrella("Sol", "Vía Láctea")
+    print(sol)
+
+## Herencia: issubclass()
+> Para identificar una relación entre dos clases se utiliza `issubclass(ClaseUno, ClaseDos)`
+
+## Herencia: isinstance()
+> Para identificar si un objeto proviene de una clase se utiliza: `isinstance(nombreObjeto, nombreClase)`
