@@ -39,15 +39,31 @@
                 print(hasattr(ClaseEjemplo, 'prop'))
 
 ## Algunos nombres de metodos para clases
-+ __init__
++ ``__init__``
   - Es el constructor de la clase. 
-+ __nombre
++ ``__nombre``
   - un método cuyo nombre comienza con '__' está (parcialmente) oculto.
 
                 def __oculto(self)
                 obj._conClase__oculto()
 
-+ __dict__ 
++ ``__dict__ ``
   - Muestra las propiedades y metodos de la clase / objeto
-+ __name__
++ ``__name__`` y ``__module__``
   - Devuelve el nombre de la clase
+  
+              class conClase:
+                    pass
+                print(conClase.__name__) #Error
+                obj = conClase()
+                print(type(obj).__name__)
++ ``__bases__``
+  - Es una tupla, contiene clases (super clases directas para las clases)
+  
+## Reflexión e introspección
+
++ **Introspección**, que es la capacidad de un programa para examinar el tipo o las propiedades de un objeto en tiempo de ejecución.
+  
++ **Reflexión**, que va un paso más allá, y es la capacidad de un programa para manipular los valores, propiedades y/o funciones de un objeto en tiempo de ejecución.
+  
+## Herencia
