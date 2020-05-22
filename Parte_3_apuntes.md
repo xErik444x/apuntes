@@ -87,6 +87,7 @@
 > Para identificar si un objeto proviene de una clase se utiliza: `isinstance(nombreObjeto, nombreClase)`
 
 ## Obtener los metodos de la clase padre:
+> Se pueden utilizar mas clases como super, con mas parametros. `class hijo(padre,madre)`
 
       class Super:
           def __init__(self, nombre):
@@ -102,3 +103,68 @@
       obj = Sub("Andy")
 
       print(obj)
+
++ Tambien se puede utilizar la función `super()`:
+
+      class Super:
+        def __init__(self, nombre):
+            self.nombre = nombre
+
+        def __str__(self):
+            return "Mi nombre es " + self.nombre + "."
+
+      class Sub(Super):
+        def __init__(self, nombre):
+            super().__init__(nombre)
+
+
++ Probando propiedades: variables de clase
+
+      class Super:
+          supVar = 1
+
+      class Sub(Super):
+          subVar = 2
+
+      obj = Sub()
+
+      print(obj.subVar)
+      print(obj.supVar)
+
++ Herencias multiples:
+        class Nivel1:
+            varia1 = 100
+            def __init__(self):
+                self.var1 = 101
+
+            def fun1(self):
+                return 102
+
+
+        class Nivel2(Nivel1):
+            varia2 = 200
+            def __init__(self):
+                super().__init__()
+                self.var2 = 201
+            
+            def fun2(self):
+                return 202
+
+
+        class Nivel3(Nivel2):
+            varia3 = 300
+            def __init__(self):
+                super().__init__()
+                self.var3 = 301
+
+            def fun3(self):
+                return 302
+
+
+        obj = Nivel3()
+
+        print(obj.varia1, obj.var1, obj.fun1())
+        print(obj.varia2, obj.var2, obj.fun2())
+        print(obj.varia3, obj.var3, obj.fun3())
+
+
