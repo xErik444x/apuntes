@@ -29,3 +29,4 @@
 
                 objetoPila = Pila()
                 print(len(objetoPila.__listaPila)) # va a dar error porque no lo ejecutamos desde la clase, sino desde fuera.
+
