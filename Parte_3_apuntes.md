@@ -354,3 +354,85 @@ Vamos a analizarlo:
 + La segunda es una función anónima de un parámetro que devuelve el valor de su argumento al cuadrado.
 + La tercer lambda toma dos parametros y devuelve el valor del primero elevado al segundo.
 ---
+## la función map()
++ toma dos argumentos:
+  - Una función.
+  - Una lista.
+  
+        map(función, lista)
+
+La función map() aplica la función pasada por su primer argumento a todos los elementos de su segundo argumento y devuelve un iterador que entrega todos los resultados de funciones posteriores. 
+
+## La función filter()
+> Espera el mismo tipo de argumentos que ``map()``, pero hace algo diferente.
+> - filtra su segundo argumento mientras es guiado por direcciones que fluyen desde la función especificada en el primer argumento
+> - (la función se invoca para cada elemento de la lista, al igual que en map() ).
+> - Los elementos que regresan True de la función pasan el filtro - los otros son rechazados.
+
+    from random import seed, randint
+
+    seed()
+    data = [ randint(-10,10) for x in range(5) ]
+    filtered = list(filter(lambda x: x > 0 and x % 2 == 0, data))
+    print(data)
+    print(filtered)
+  
+## Procesando archivos
+> Direccion de ficheros
+> - Windows `\` - ``nombre = "\dir\archivo"``
+> - Linux `/` - ``nombre = "/dir/archivo"``
+
+> El problema viene cuando queremos usarlo en python, ya que reconoce el "``\``" como caracter de escape, por eso en windows - python, tenemos que usar doble caracter:
++ ``nombre = "\\dir\\archivo"``
++ Aunque, python tambien los convierte automaticamente.
+
+## Stream para archivos
+> Si la apertura es exitosa, el programa solo podrá realizar las operaciones que sean consistentes con el modo abierto declarado.
+> Hay dos operaciones básicas a realizar con el stream:
+
++ Lectura del stream: las porciones de los datos se recuperan del archivo y se colocan en un área de memoria administrada por el programa (por ejemplo, una variable).
++ Escritura del stream: Las porciones de los datos de la memoria (por ejemplo, una variable) se transfieren al archivo.
+  
+> Hay tres modos básicos utilizados para abrir un stream:
+
++ Modo Lectura: un stream abierto en este modo permite solo operaciones de lectura; intentar escribir en la transmisión provocará una excepción (la excepción se llama UnsupportedOperation, la cual hereda el OSError y el ValueError, y proviene del módulo io).
++ Modo Escritura: un stream abierto en este modo permite solo operaciones de escritura;
++ Modo Actualizar: un stream abierto en este modo permite tanto lectura como escritura.
+
+## Abriendo los streams
+`stream = open(file, mode = 'r', encoding = None)`
++ El nombre de la función (open) habla por si mismo; si la apertura es exitosa, la función devuelve un objeto stream; de lo contrario, se genera una excepción (por ejemplo, FileNotFoundError si el archivo que vas a leer no existe).
++ El primer parámetro de la función (file) especifica el nombre del archivo que se asociará al stream.
++ El segundo parámetro (mode) especifica el modo de apertura utilizado para el stream; es una cadena llena de una secuencia de caracteres, y cada uno de ellos tiene su propio significado especial (más detalles pronto).
++ El tercer parámetro (encoding) especifica el tipo de codificación (por ejemplo, UTF-8 cuando se trabaja con archivos de texto).
++ La apertura debe ser la primera operación realizada en el stream.
+
+## Modos de apertura 
++ Modo de apertura `r`: lectura
+  - El fichero debe existir
++ Modo de apertura `w`: escritura
+  - El archivo asociado con el stream no necesita existir. Si no existe, se creará.
+  - si existe, se truncará a la longitud de cero (se borrá).
++ Modo de apertura `a`: adjuntar
+  - El archivo asociado con el stream no necesita existir.
+  - si no existe, se creará. 
+  - si existe, el cabezal de grabación virtual se establecerá al final del archivo
+  
+|Modos|Descripción|
+|:-:|:-:|
+|r|Lectura|
+|w|Escritura|
+|a|Adjuntar|
+|r+|Leer y actualizar|
+|w+|Escribir y actualizar|
+---
+## Seleccionando modo de texto y modo binario
+Si hay una letra b al final de la cadena del modo significa que el stream se debe abrir en el modo binario.
+
+|Modo texto |Modo Binario|Descripción|
+|:-:|:-:|:-:|
+|rt|rb|Lectura|
+|wt|wb|Escritura|
+|at|ab|Adjuntar|
+|r+t|r+b|Leer y actualizar|
+|w+t|w+b|Escribir y actualizar|
